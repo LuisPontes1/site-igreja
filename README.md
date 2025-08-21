@@ -1,6 +1,6 @@
-# Site da Igreja (Estrutura Inicial)
+# Site da Igreja Presbiteriana Fonte (Estrutura Inicial)
 
-Este repositório contém a estrutura inicial (mock) do site da igreja utilizando **HTML, CSS e JavaScript puro**. O objetivo é evoluir incrementalmente, mantendo tudo simples e pronto para hospedagem estática (ex.: GitHub Pages, Netlify, Vercel, etc.).
+Este repositório contém a estrutura inicial (mock) do site da **Igreja Presbiteriana Fonte** utilizando **HTML, CSS e JavaScript puro**. O objetivo é evoluir incrementalmente, mantendo tudo simples e pronto para hospedagem estática (ex.: GitHub Pages, Netlify, Vercel, etc.).
 
 ## 📁 Estrutura de Pastas
 
