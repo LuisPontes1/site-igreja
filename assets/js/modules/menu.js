@@ -3,7 +3,7 @@
  * Handles mobile navigation menu toggle and accessibility
  */
 
-import { qs, on, toggleClass, hasClass } from '../utils/dom.js';
+import { qs, qsa, on, toggleClass, hasClass } from '../utils/dom.js';
 
 class MenuModule {
   constructor() {
@@ -56,20 +56,17 @@ class MenuModule {
     });
     
     // Handle navigation link clicks
-    const navLinks = qs('.nav-list a', this.menu.parentElement);
-    if (navLinks) {
-      on(this.menu, 'click', (e) => {
-        if (e.target.matches('a')) {
-          // Close mobile menu when link is clicked
-          if (this.isOpen) {
-            this.closeMenu();
-          }
-          
-          // Update active state
-          this.updateActiveLink(e.target);
+    on(this.menu, 'click', (e) => {
+      if (e.target.matches('a')) {
+        // Close mobile menu when link is clicked
+        if (this.isOpen) {
+          this.closeMenu();
         }
-      });
-    }
+        
+        // Update active state
+        this.updateActiveLink(e.target);
+      }
+    });
   }
   
   setInitialState() {
@@ -116,7 +113,7 @@ class MenuModule {
   
   updateActiveLink(clickedLink) {
     // Remove active class from all links
-    const allLinks = qs('.nav-link');
+    const allLinks = qsa('.nav-link');
     allLinks.forEach(link => {
       toggleClass(link, 'active', false);
     });
@@ -127,7 +124,7 @@ class MenuModule {
   
   setActiveLink() {
     const currentPath = window.location.pathname;
-    const navLinks = qs('.nav-link');
+    const navLinks = qsa('.nav-link');
     
     navLinks.forEach(link => {
       const linkPath = new URL(link.href).pathname;
