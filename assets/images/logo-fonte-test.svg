@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo teste IP Fonte">
+  <!-- Símbolo: cruz estilizada emergindo de ondas (fonte) -->
+  <rect width="120" height="120" rx="16" fill="#fff" />
+  <g stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cruz -->
+    <path d="M60 22v52" />
+    <path d="M42 42h36" />
+    <!-- Ondas / fluxo -->
+    <path d="M24 82c8 8 20 12 36 12s28-4 36-12" />
+    <path d="M30 92c7 7 18 10 30 10s23-3 30-10" stroke-width="4" opacity="0.55" />
+  </g>
+  <!-- Halo / destaque minimal -->
+  <circle cx="60" cy="22" r="8" fill="#111" />
+</svg>
