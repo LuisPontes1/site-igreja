@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igreja Esperança Viva</title>
+    <meta name="description" content="Site oficial da Igreja Esperança Viva" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header" data-include="partials/header.html"></div>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content container">
+          <h1 class="hero__title">Bem-vindo à <span>Igreja Esperança Viva</span></h1>
+          <p class="hero__subtitle">Amar a Deus. Servir pessoas. Viver o Evangelho.</p>
+          <a href="#cultos" class="btn btn--primary">Próximos Cultos</a>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container">
+          <h2 class="section__title">Quem Somos</h2>
+          <p class="lead">Somos uma comunidade cristã dedicada a proclamar a esperança em Cristo, discipular famílias e impactar nossa cidade com o amor de Deus.</p>
+          <div class="grid grid--2cols about-grid">
+            <div>
+              <h3>Visão</h3>
+              <p>Ser uma igreja que inspira transformação integral em Cristo.</p>
+              <h3>Missão</h3>
+              <p>Anunciar o Evangelho, formar discípulos e servir a sociedade.</p>
+              <h3>Valores</h3>
+              <ul class="list list--check">
+                <li>Bíblia como fundamento</li>
+                <li>Oração e intimidade com Deus</li>
+                <li>Comunhão autêntica</li>
+                <li>Serviço e compaixão</li>
+              </ul>
+            </div>
+            <div class="about-grid__image-wrap">
+              <!-- Exemplo de imagem via raw GitHub -->
+              <img src="https://raw.githubusercontent.com/LuisPontes1/site-igreja/main/assets/images/hero-placeholder.jpg" alt="Comunidade reunida" class="responsive radius" onerror="this.style.display='none'" />
+              <p class="caption">(Substitua pela imagem real em assets/images)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="cultos">
+        <div class="container">
+          <h2 class="section__title">Horários de Culto</h2>
+          <div class="grid schedule-grid">
+            <div class="card">
+              <h3>Domingo</h3>
+              <p>09h30 - Escola Bíblica</p>
+              <p>18h30 - Culto de Adoração</p>
+            </div>
+            <div class="card">
+              <h3>Quarta</h3>
+              <p>20h00 - Estudo Bíblico &amp; Oração</p>
+            </div>
+            <div class="card">
+              <h3>Sábado</h3>
+              <p>19h30 - Jovens</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reels">
+        <div class="container">
+          <h2 class="section__title">Últimos Reels</h2>
+          <p class="muted small">Carregado automaticamente do Instagram (mock / placeholder).</p>
+          <div id="instagram-reels" class="reels-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="localizacao">
+        <div class="container">
+          <h2 class="section__title">Localização</h2>
+          <p class="lead">Rua Exemplo, 123 - Centro, Sua Cidade - UF</p>
+          <div id="map" class="map" role="region" aria-label="Mapa da Igreja"></div>
+          <div class="map__actions">
+            <a id="map-directions" target="_blank" rel="noopener" class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&destination=-23.55052,-46.633308">Rotas no Google Maps</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="container">
+          <h2 class="section__title">Contato</h2>
+          <form class="form" id="contact-form" data-netlify="true" name="contato" netlify-honeypot="bot-field" onsubmit="return validateContact(event)">
+            <input type="hidden" name="form-name" value="contato" />
+            <p class="hidden"><label>Não preencha: <input name="bot-field" /></label></p>
+            <div class="form__group">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form__group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">Enviar</button>
+            </div>
+            <p id="form-status" class="small" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer" data-include="partials/footer.html"></div>
+
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/instagram.js" defer></script>
+    <script src="assets/js/maps.js" defer></script>
+    <!-- Google Maps API: Substitua YOUR_GOOGLE_MAPS_API_KEY -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+  </body>
+</html>
