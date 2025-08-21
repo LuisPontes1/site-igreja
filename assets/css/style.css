@@ -20,6 +20,7 @@ ul { padding-left:1.2rem; }
 .header__inner { display:flex; align-items:center; justify-content:space-between; min-height:64px; }
 .logo { display:flex; gap:.5rem; align-items:center; font-weight:700; font-size:1rem; }
 .logo__icon { font-size:1.25rem; }
+.logo__img { height:40px; width:auto; display:block; object-fit:contain; }
 .nav__toggle { display:none; background:none; border:1px solid #ccc; padding:.4rem .6rem; border-radius:4px; cursor:pointer; }
 .nav__list { list-style:none; margin:0; padding:0; display:flex; gap:1.2rem; align-items:center; }
 .nav__list a { font-weight:500; }
