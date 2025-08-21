@@ -1,0 +1,26 @@
+{
+  "name": "Igreja Exemplo",
+  "short_name": "Igreja Exemplo",
+  "description": "TODO: Substituir pela descrição da sua igreja",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2c5530",
+  "orientation": "portrait-primary",
+  "categories": ["religious", "community"],
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/img/logo/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
