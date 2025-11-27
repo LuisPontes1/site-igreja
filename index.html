@@ -37,24 +37,15 @@
         justify-content: center;
         margin-top: 1rem;
       }
-      /* Ajuste da linha verde para cobrir todo o texto */
-      .hero-brand__text {
-        position: relative;
-        display: inline-block;
+      
+      /* Ajuste da linha verde abaixo do título 'Em Breve' */
+      .hero-coming-soon .section__title {
+        display: inline-block; /* Faz a caixa do título ter o tamanho do texto */
       }
-      .hero-brand__text:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -5px;
-        height: 3px;
-        background: var(--color-brand-green);
-        border-radius: 2px;
-      }
-      /* Remove a linha antiga que estava só no 'fonte' */
-      .hero-brand__fonte:after {
-        display: none;
+      .hero-coming-soon .section__title:after {
+        width: 100%; /* A linha ocupa 100% da largura do texto */
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
@@ -85,6 +76,12 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               Enviar E-mail
             </a>
+            
+            <a href="https://instagram.com/ipfonte" target="_blank" rel="noopener" class="btn btn--outline btn-email" style="margin-top: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              Siga no Instagram
+            </a>
+
             <p class="small muted" style="margin-top: 1rem; font-size: 0.8rem;">
               Ou escreva para: <strong>ipfonte@ipfonte.org</strong>
             </p>
