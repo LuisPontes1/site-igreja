@@ -37,6 +37,25 @@
         justify-content: center;
         margin-top: 1rem;
       }
+      /* Ajuste da linha verde para cobrir todo o texto */
+      .hero-brand__text {
+        position: relative;
+        display: inline-block;
+      }
+      .hero-brand__text:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 3px;
+        background: var(--color-brand-green);
+        border-radius: 2px;
+      }
+      /* Remove a linha antiga que estava só no 'fonte' */
+      .hero-brand__fonte:after {
+        display: none;
+      }
     </style>
   </head>
   <body>
