@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+content = r"""<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -79,4 +80,7 @@
     <script src="assets/js/components.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </body>
-</html>
+</html>"""
+
+with open(r"C:\projetos\site-igreja\index.html", "w", encoding="utf-8") as f:
+    f.write(content)
